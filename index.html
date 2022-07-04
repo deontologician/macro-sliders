@@ -1,0 +1,20 @@
+<html>
+    <!-- include script.js -->
+    <script src="./script.js"></script>
+    <body>
+        <div class="slider">
+            <p>Soylent grams</p>
+            <input type="range" min="0" max="300" value="0" class="slider" id="soylent-slider"
+            onchange="sliderChange()">
+            <span id="soylent-grams">0</span>g
+            <p>Isopure grams</p>
+            <input type="range" min="0" max="300" value="0" class="slider" id="isopure-slider"
+            onchange="sliderChange()">
+            <span id="isopure-grams">0</span>g
+        </div>
+        <div class="output">
+            <p>Total protein: <span id="protein-output">0</span>g</p>
+            <p>Total calories: <span id="calories-output">0</span></p>
+        </div>
+    </body>
+</html>
